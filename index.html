@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+  <script src="https://kit.fontawesome.com/98bc12c08c.js" crossorigin="anonymous"></script>
+
+  <title>PDF viewer</title>
+</head>
+<body>
+  <header>
+    <h1 class="fa fa-file-pdf-o"> PDF viewer</h1>
+    <nav class="nav">
+      <button class="btn" id="prev"><i class="fas fa-arrow-circle-left"></i> Prev</button>
+      <span class="page-info">
+        Page <span id="page-num">0</span> of <span id="page-count">0</span>
+      </span>
+      <button class="btn" id="next">Next <i class="fas fa-arrow-circle-right"></i></button>
+    </nav>
+  </header>
+
+  <div class="error-container"></div>
+
+  <main>
+    <canvas id="pdf-render"></canvas>
+  </main>
+
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
